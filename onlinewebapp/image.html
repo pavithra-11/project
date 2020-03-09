@@ -1,0 +1,55 @@
+<html>
+<head>
+<style>
+body{
+	background:#ddd6f3;
+}
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 3px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.button{
+	padding:10px;
+}
+</style>
+</head>
+
+<body>
+	<form action="CartDetails" method="Post">
+	<center><h1>Welcome to world of Shopping</h1>
+		<div class="row">
+  <div class="column">
+  	<input type="checkbox" name="img1" value="CROSS RING">
+    <img src="img1.jpg"  style="width:250px"><br>
+    <input type="text" placeholder="Quantity" name="quan1" >
+  </div>
+  <div class="column">
+  	<input type="checkbox" name="img2" value="LEAF RING">
+    <img src="img2.jpg"  style="width:250px"><br>
+    <input type="text" placeholder="Quantity" name="quan2">
+  </div>
+  <div class="column">
+  	<input type="checkbox" name="img3" value="LOTUS RING">
+    <img src="img3.jpg"  style="width:200px"><br>
+    <input type="text" placeholder="Quantity" name="quan3">
+  </div>
+
+</div>
+
+<div class="button">
+<input type="submit" value="GO TO CART" style="background-color:#021b79;color:white;padding:10px 20px">
+</div>
+</center>		
+</form>
+</body>
+</html>
